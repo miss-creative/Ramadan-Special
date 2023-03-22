@@ -1,0 +1,223 @@
+/* Default styles for all screen sizes */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(250, 194, 178);
+  }
+  
+  header {
+    background-color: #fbe1e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  nav {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+  }
+  
+  nav a {
+    color: #fefcfc;
+    text-decoration: none;
+    padding: 1rem;
+  }
+  
+  .header-text {
+    text-align: center;
+    color: #333;
+  }
+  
+  .header-text h1 {
+    margin-bottom: 1rem;
+  }
+  
+  .header-text img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  
+  section {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card,
+  .quran-study-card {
+ 
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+  }
+  .card{
+    background-color: #fef9db;
+  }
+  .quran-study-card{
+    background-color: #e0e5f5;
+  }
+
+  
+  .motivational-message-card,
+  .greeting-card,
+  .ramadan-fitness-card,
+  .ramadan-playlist-card,
+  .ramadan-blog-card {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+  }
+  .ramadan-fitness-card{
+  background-color: #ddfbe9;
+}
+.motivational-message-card{
+    background-color: #ecffcd;
+  }
+  .greeting-card{
+    background-color: #eafff3;
+  }
+  .ramadan-playlist-card{
+    background-color: #d8f4fa;
+  }
+  .greeting-card{
+    background-color: #eafff3;
+  }
+  .ramadan-blog-card{
+    background-color: #fae3ed;
+  }
+  .card a,
+  .quran-study-card h3,
+  .motivational-message-card p,
+  .greeting-card p,
+  .ramadan-fitness-card p,
+  .ramadan-blog-card a {
+    margin-top: 1rem;
+    display: block;
+  }
+  
+  .quran-study-card img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .card img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  footer a {
+    color: #973f8a;
+  }
+  
+  .ramadan-manners-card p,
+  .charity-platforms-card a,
+  .ramadan-playlist-card a {
+    margin-top: 1rem;
+    display: block;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .ramadan-playlist-card a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #7f3c93;
+  }
+  
+  .ramadan-playlist-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Media queries for different screen sizes */
+  
+  @media only screen and (max-width: 768px) {
+    /* Styles for screens with a maximum width of 768px */
+    
+    .container {
+      flex-direction: column;
+    }
+  
+    .card,
+    .quran-study-card,
+    .ramadan-fitness-card,
+    .motivational-message-card,
+    .greeting-card,
+    .ramadan-playlist-card,
+    .ramadan-blog-card {
+      width: calc(100% - 2rem);
+      height: auto;
+    }
+    .card img {
+        width: 150px;
+        height: 150px;
+        }
+        
+        .quran-study-card img {
+        width: 80px;
+        height: 80px;
+        }
+        }
+        
+        @media only screen and (max-width: 480px) {
+        /* Styles for screens with a maximum width of 480px */
+        
+        .header-text h1 {
+        font-size: 2rem;
+        }
+        
+        .header-text img {
+        width: 100px;
+        height: 100px;
+        }
+        
+        .card,
+        .quran-study-card,
+        .ramadan-fitness-card,
+        .motivational-message-card,
+        .greeting-card,
+        .ramadan-playlist-card,
+        .ramadan-blog-card {
+        width: calc(100% - 1rem);
+        height: auto;
+        }
+        
+        .card img {
+        width: 100px;
+        height: 100px;
+        }
+        
+        .quran-study-card img {
+        width: 60px;
+        height: 60px;
+        }
+        }
+        
+        
